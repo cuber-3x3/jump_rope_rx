@@ -4,6 +4,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onButtonPressed(Button.A, function () {
+    跳绳个数 = 0
     正在跳绳 = 1
     basic.showLeds(`
         # # # # #
