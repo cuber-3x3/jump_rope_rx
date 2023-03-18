@@ -25,12 +25,10 @@ let 正在跳绳 = 0
 let 跳绳个数 = 0
 跳绳个数 = 0
 正在跳绳 = 0
-radio.setGroup(1)
+radio.setGroup(31)
 basic.forever(function () {
     if (正在跳绳 == 1) {
         serial.writeValue("x", 跳绳个数)
         basic.pause(200)
-    } else {
-        basic.showNumber(跳绳个数)
     }
 })
